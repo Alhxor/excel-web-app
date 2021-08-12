@@ -2,3 +2,4 @@ reqs.txt
 node_modules
 .vscode
 .gtm
+dist
