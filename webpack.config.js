@@ -45,7 +45,9 @@ module.exports = {
   devServer: {
     port: 3000,
     hot: isDev,
-    // writeToDisk: true
+    writeToDisk: true,
+    contentBase: path.resolve(__dirname, 'dist'),
+    watchContentBase: true
   },
   plugins: [
     new CleanWebpackPlugin(),
