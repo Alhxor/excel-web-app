@@ -1,0 +1,22 @@
+@mixin button($hover-color: green) {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    color: black;
+    opacity: .75;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    
+    &:hover {
+        color: $hover-color;
+    }
+
+    &:focus, &:active {
+        outline: 1px solid blue;
+    }
+}
