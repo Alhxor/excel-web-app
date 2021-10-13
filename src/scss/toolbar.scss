@@ -1,3 +1,22 @@
 @import "mixins.scss";
 @import "variables.scss";
 
+
+.toolbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    position: absolute;
+    top: $header-height;
+    left: 0;
+    right: 0;
+
+    height: $toolbar-height;
+    padding: .25rem .5rem;
+
+    &__button {
+        @include button($hover-color: darkgreen);
+        margin-right: .25rem;
+    }
+}
