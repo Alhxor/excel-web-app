@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Pure JS Excel</title>
 </head>
 <body>
 
-    <div id="app" class="container"></div>
+    <div id="app" class="container">
+        <div class="dashboard">
+            <div class="dashboard__search search">
+                <div class="search__button">
+                    <i class="material-icons">search</i>
+                </div>
+                <input type="text" class="search__input">
+            </div>
+            <div class="dashboard__recent recent">
+                <div class="recent__sheet recent__sheet--add">+</div>
+            </div>
+            <div class="dashboard__sheets sheets">
+                <div class="sheets__row sheets__row">
+                    <div class="sheets__col sheets__col--head">Title</div>
+                    <div class="sheets__col sheets__col--head">Date</div>
+                </div>
+                <div class="sheets__row">
+                    <div class="sheets__col">My first sheet</div>
+                    <div class="sheets__col">10/05/2020</div>
+                </div>
+                <div class="sheets__row">
+                    <div class="sheets__col">Second sheet</div>
+                    <div class="sheets__col">12/09/2021</div>
+                </div>
+                <div class="sheets__row">
+                    <div class="sheets__col">To do list</div>
+                    <div class="sheets__col">13/09/2021</div>
+                </div>
+                <div class="sheets__row">
+                    <div class="sheets__col">Birthdays</div>
+                    <div class="sheets__col">15/10/2021</div>
+                </div>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>

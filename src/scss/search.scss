@@ -1,0 +1,31 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.search {
+    display: flex;
+    align-items: center;
+    height: $search-height;
+
+    padding: .25rem .5rem;
+
+    border-bottom: 1px solid #ddd;
+
+    &__button {
+        @include button;
+        opacity: .5;
+        margin-right: .5rem;
+    }
+
+    &__input {
+        border: none;
+        height: 32px;
+        flex-grow: 1;
+        padding: 2px 4px;
+        
+        border-radius: 4px;
+        border: 1px solid #eee;
+
+        font-size: 24px;
+        opacity: .75;
+    }
+}

@@ -1,0 +1,31 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.dashboard__recent {
+    position: absolute;
+    top: $search-height;
+    left: 0;
+    right: 0;
+}
+
+.recent {
+    display: flex;
+    align-items: center;
+    height: $recent-height;
+
+    border-bottom: 1px solid #ddd;
+
+    padding: .25rem .5rem;
+
+    &__sheet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+
+        border: 1px solid #ddd;
+
+        font-size: 32px;
+    }
+}
