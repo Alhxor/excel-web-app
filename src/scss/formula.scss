@@ -1,19 +1,19 @@
 @import "mixins.scss";
 @import "variables.scss";
 
-.formula {
-    display: flex;
-    align-items: center;
-
+.excel__formula {
     position: absolute;
     top: $header-height + $toolbar-height;
     left: 0;
     right: 0;
+}
+
+.formula {
+    display: flex;
+    align-items: center;
 
     height: $formula-height;
     padding: .25rem .5rem;
-
-    // background-color: #eeffff;
 
     &__fx {
         padding: .25rem .5rem;
