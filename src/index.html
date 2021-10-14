@@ -10,65 +10,36 @@
 <body>
 
     <div id="app" class="container">
-        <div class="excel">
-            <div class="excel__header header">
-                <div class="header__title" contenteditable="true">New sheet</div>
-                <div class="header__buttons">
-                    <div class="header__button">
-                        <i class="material-icons">exit_to_app</i>
-                    </div>
-                    <div class="header__button">
-                        <i class="material-icons">delete</i>
-                    </div>
+        <div class="dashboard">
+            <div class="dashboard__search search">
+                <div class="search__button">
+                    <i class="material-icons">search</i>
                 </div>
+                <input type="text" class="search__input">
             </div>
-            <div class="excel__toolbar toolbar">
-                <div class="toolbar__button">
-                    <i class="material-icons">format_bold</i>
-                </div>
-                <div class="toolbar__button">
-                    <i class="material-icons">format_italic</i>
-                </div>
-                <div class="toolbar__button">
-                    <i class="material-icons">format_underline</i>
-                </div>
-                <div class="toolbar__button">
-                    <i class="material-icons">format_align_left</i>
-                </div>
-                <div class="toolbar__button">
-                    <i class="material-icons">format_align_center</i>
-                </div>
-                <div class="toolbar__button">
-                    <i class="material-icons">format_align_right</i>
-                </div>
-                <div class="toolbar__button">
-                    <i class="material-icons">format_align_justify</i>
-                </div>
+            <div class="dashboard__recent recent">
+                <div class="recent__sheet recent__sheet--add">+</div>
             </div>
-            <div class="excel__formula formula">
-                <div class="formula__fx">fx</div>
-                <div class="formula__input" contenteditable="true"></div>
-            </div>
-            <div class="excel__table table">
-                <div class="table__row">
-                    <div class="table__col table__col--head"></div>
-                    <div class="table__col table__col--head">A</div>
-                    <div class="table__col table__col--head">B</div>
+            <div class="dashboard__sheets sheets">
+                <div class="sheets__row sheets__row">
+                    <div class="sheets__col sheets__col--head">Title</div>
+                    <div class="sheets__col sheets__col--head">Date</div>
                 </div>
-                <div class="table__row">
-                    <div class="table__col">1</div>
-                    <div class="table__col"></div>
-                    <div class="table__col"></div>
+                <div class="sheets__row">
+                    <div class="sheets__col">My first sheet</div>
+                    <div class="sheets__col">10/05/2020</div>
                 </div>
-                <div class="table__row">
-                    <div class="table__col">2</div>
-                    <div class="table__col"></div>
-                    <div class="table__col"></div>
+                <div class="sheets__row">
+                    <div class="sheets__col">Second sheet</div>
+                    <div class="sheets__col">12/09/2021</div>
                 </div>
-                <div class="table__row">
-                    <div class="table__col">3</div>
-                    <div class="table__col"></div>
-                    <div class="table__col"></div>
+                <div class="sheets__row">
+                    <div class="sheets__col">To do list</div>
+                    <div class="sheets__col">13/09/2021</div>
+                </div>
+                <div class="sheets__row">
+                    <div class="sheets__col">Birthdays</div>
+                    <div class="sheets__col">15/10/2021</div>
                 </div>
             </div>
         </div>

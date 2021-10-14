@@ -6,6 +6,10 @@
 @import "formula.scss";
 @import "table.scss";
 
+@import "search.scss";
+@import "recent.scss";
+@import "sheets.scss";
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +21,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.excel {
+.excel, .dashboard {
     position: relative;
     height: 100vh;
 }
