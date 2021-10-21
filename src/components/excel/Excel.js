@@ -6,7 +6,7 @@ import {getClassName} from '@core/utils'
  */
 export class Excel {
     constructor(selector, options = {}) {
-        this.$el = document.querySelector(selector)
+        this.$el = $(selector)
         this.components = options.components || []
 
         this.components.forEach(c => console.log(c.className))
@@ -22,8 +22,7 @@ export class Excel {
             )
 
             const component = new Component($el)
-            $el.innerHTML = component.toHTML()
-
+            $el.html(component.toHTML())
             $root.append($el)
         })
 
