@@ -13,6 +13,14 @@ class Dom {
         return this.$el.outerHTML.trim()
     }
 
+    on(event, callback) {
+        this.$el.addEventListener(event, callback)
+    }
+
+    off(event, callback) {
+        this.$el.removeEventListener(event, callback)
+    }
+
     clear() {
         this.html('')
         return this
